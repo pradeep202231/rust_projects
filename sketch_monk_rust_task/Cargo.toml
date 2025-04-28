@@ -1,0 +1,14 @@
+[package]
+name = "task1"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rocket={version="0.5.1",features=["json"]}
+diesel = { version = "2.2.9", features = ["postgres","r2d2","chrono"] }
+serde = "1.0.219"
+diesel_migrations = "2.0.0"
+dotenv = "0.15.0"
+validator = { version = "0.16", features = ["derive"] }
+chrono = { version = "0.4", features = ["serde"] }
+tokio="*"
